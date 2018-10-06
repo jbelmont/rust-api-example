@@ -17,7 +17,7 @@ fn main() {
     stdin().read_line(&mut last_name).unwrap();
     let last_name = &last_name[..(last_name.len() - 1)]; // Drop the newline character
 
-    let age = 5;
+    let age = 37;
 
     println!("What would you like your email to be?");
     let mut email = String::new();
@@ -27,9 +27,3 @@ fn main() {
     let user = create_user(&connection, first_name, last_name, &age, email);
     println!("\nSaved user {} with id {}", first_name, user.id);
 }
-
-#[cfg(not(windows))]
-const EOF: &'static str = "CTRL+D";
-
-#[cfg(windows)]
-const EOF: &'static str = "CTRL+Z";
