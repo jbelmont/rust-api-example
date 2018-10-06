@@ -1,0 +1,8 @@
+[package]
+name = "rust-api-example"
+version = "0.1.0"
+authors = ["Jean-Marcel Belmont <jbelmont@foodlogiq.com>"]
+
+[dependencies]
+rocket = "0.3.17"
+rocket_codegen = "0.3.17"
